@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PagePilot Data Deletion Request</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header><div><h1>Data Deletion Request</h1><p>PagePilot request status</p></div></header>
+  <main>
+    <h2>Request received</h2>
+    <p>Your verified request has been received. PagePilot data is stored locally on the Page administrator's computer and will be removed during the deletion process.</p>
+    <p>Requests are completed within 30 days. For assistance, email <a href="mailto:elbahibazine@gmail.com?subject=PagePilot%20Data%20Deletion%20Request">elbahibazine@gmail.com</a>.</p>
+    <p id="confirmation"></p>
+  </main>
+  <script>
+    const code = new URLSearchParams(location.search).get("code");
+    if (code) document.getElementById("confirmation").textContent = `Confirmation code: ${code}`;
+  </script>
+</body>
+</html>
